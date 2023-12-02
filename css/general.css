@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--hero-background-color);
+}
+
+:root {
+  --footter-gap: 2rem;
+  --nav-gap: 3rem;
+  --chef-card-gap: 1.5rem;
+  --container-width: 85%;
+  --padding-small-phones: 0;
+  --header-container-background-color: #ffffff;
+  --logo-color: #212529;
+  --anchor-color: #7f7f90;
+  --header-after-color: #ce1212;
+  --hero-background-color: #eeeeee;
+  --hero-content-h1: #37373f;
+  --hero-content-p: #9f9f9f;
+  --video-btn-color: rgb(52, 50, 50);
+  --hero-btn-hovered: rgb(255, 2, 2);
+  --chef-background-color: #fff;
+  --chef-color-h2: #7f7f90;
+  --chef-color-p: #212529;
+  --chef-card-back-color: #fff;
+  --chef-card-image: url("../media/wave.svg");
+  --contact-details-background: #f5f5f5;
+  --contact-content-h3-color: #7d7d7d;
+  --selection-back-color: #d85454;
+  --hero-p-color: #4f4f5a;
+}
+
+::selection {
+  color: var(--header-container-background-color);
+  background-color: var(--selection-back-color);
+}

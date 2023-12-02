@@ -1,0 +1,57 @@
+:root:has(.light-icon:checked) {
+  --header-container-background-color: #171717;
+  --logo-color: #fff;
+  --anchor-color: #9f9f9f;
+  --header-after-color: #c17e1f;
+  --hero-background-color: #252525;
+  --hero-content-h1: #ffffff;
+  --video-btn-color: #fff;
+  --hero-btn-hovered: rgb(255, 156, 16);
+  --chef-background-color: #202020;
+  --chef-color-h2: #9f9f9f;
+  --chef-color-p: #fff;
+  --chef-card-back-color: #171717;
+  --chef-card-image: url("../media/wave-dark.svg");
+  --contact-details-background: #0d0d0d;
+  --contact-content-h3-color: #7d7d7d;
+  --selection-back-color: rgb(255, 156, 16);
+  --hero-p-color: #9f9f9f;
+}
+
+.mode-dark {
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding-top: 0.3rem;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+}
+
+.light-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.gear-icon {
+  position: absolute;
+  transform: scale(0);
+  transition: all 0.3s;
+  color: var(--logo-color);
+}
+
+.moon-icon {
+  position: absolute;
+  transition: all 0.3s;
+  color: var(--logo-color);
+}
+
+.light-icon:checked ~ .moon-icon {
+  transform: scale(0);
+}
+.light-icon:checked ~ .gear-icon {
+  transform: scale(1);
+}

@@ -1,0 +1,259 @@
+/* ******************* */
+/* width of container */
+/* ******************* */
+@media screen and (max-width: 1400px) {
+  :root {
+    --container-width: 1140px;
+    --chef-card-gap: 1rem;
+    --nav-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --container-width: 970px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --container-width: 720px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --container-width: 500px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    --padding-small-phones: 2rem;
+  }
+}
+
+/* media quires */
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  .footer-section .footer-container .about,
+  .footer-section .footer-container .footer-contact-details {
+    width: calc(calc(100% - 1.25rem * 2) / 2);
+    order: 1;
+  }
+
+  .footer-section .footer-container .subscription {
+    width: 100%;
+    order: 2;
+  }
+  :root {
+    --chef-card-gap: 1rem;
+    --nav-gap: 2rem;
+  }
+  .hero-content {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .container {
+    padding: 6rem 0 3rem;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    height: auto;
+  }
+
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .hero-content h2 {
+    margin: auto;
+    width: 60%;
+  }
+
+  .container .hero-content .hero-btn-group {
+    justify-content: center;
+  }
+
+  .chef-section .chef-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding: 1rem 0 1.5rem;
+  }
+
+  .chef-section .chef-cards .chef-card {
+    width: calc(calc(100% - 0.6rem * 2) / 2);
+    margin-bottom: 1rem;
+  }
+
+  .chef-card .card-content p {
+    color: var(--chef-color-h2);
+    font-size: 0.8rem;
+    padding: 0.6rem 0.5rem 1rem;
+  }
+
+  .gallery {
+    columns: 2;
+    gap: 1rem;
+  }
+  .content h3 {
+    font-size: 1.2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .contact-section .input-group {
+    flex-direction: column;
+    gap: 0;
+  }
+  .footer-section .footer-container .about,
+  .footer-section .footer-container .footer-contact-details {
+    width: calc(calc(100% - 1.25rem * 2) / 2);
+    order: 1;
+  }
+
+  .footer-section .footer-container .subscription {
+    width: 100%;
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-content .hero-btn {
+    border-radius: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 6rem 0 3rem;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    height: auto;
+  }
+
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .hero-content h2 {
+    margin: auto;
+    width: 80%;
+  }
+
+  .container .hero-content .hero-btn-group {
+    justify-content: center;
+  }
+
+  .chef-section .chef-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding: 1rem 0 1.5rem;
+  }
+
+  .chef-section .chef-cards .chef-card {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .chef-section .chef-cards .chef-card:first-child {
+    margin-top: 2rem;
+  }
+
+  .chef-cards .card-img::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-image: var(--chef-card-image);
+    width: 100%;
+    height: 3.75rem;
+  }
+
+  .gallery {
+    columns: 1;
+    gap: 1rem;
+  }
+  .content h3 {
+    font-size: 1.2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .contact-section .input-group {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .contact-details .contact-content {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .contact-details .contact-content:last-child {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-section form {
+    padding: 1rem;
+  }
+
+  .footer-section .footer-container .about,
+  .footer-section .footer-container .footer-contact-details {
+    width: 100%;
+  }
+  .footer-section .footer-container .subscription {
+    width: 100%;
+  }
+
+  .social-icons {
+    justify-content: space-around;
+  }
+
+  .header-container .nav-container ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-content {
+    width: 100%;
+  }
+  .subscription-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .subscription-group input[type="email"] {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .hero-content .hero-btn-group {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+}
