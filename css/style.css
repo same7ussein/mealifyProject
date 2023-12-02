@@ -84,6 +84,21 @@ li a::after {
 
 .navbar-icon{
   display: none;
+  color: var(--logo-color);
+}
+
+.navbar-icon {
+  font-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  margin-top: .5rem;
+}
+
+.menu-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 5rem;
 }
 
 /* ********************************** */

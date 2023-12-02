@@ -236,6 +236,9 @@
   .header-container .nav-container ul {
     display: none;
   }
+  .navbar-icon{
+  display: block;
+}
 }
 
 @media screen and (max-width: 576px) {
